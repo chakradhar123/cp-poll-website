@@ -4,7 +4,10 @@
 <div class="dashboardItem">Name:<%= user.firstName %> <%= user.lastName %></div>
 <div class="dashboardItem">email:<%= user.email %></div>
 <div class="dashboardItem">Polls:</div>
-</div>
+
 <% Polls.forEach(poll=>{ %>
 <div class="dashboardItem"><a href="/polls/<%= poll._id %>"><%= poll.question %></a></div>
-<% })%> <% include ./partials/footer %>
+
+<% })%>
+</div>
+<% include ./partials/footer %>
