@@ -15,7 +15,7 @@ another.addEventListener('click', () => {
 	let k = o + 1;
 	let optionclass = document.getElementById(`option${o}`);
 
-	optionclass.outerHTML += `<div class="cen" id="os${i}"><input type="text" name="option[${i}]" placeholder="option" required><span id="o${i}">X</span></div> <div id="option${k}"></div>`;
+	optionclass.outerHTML += `<div class="cen" id="os${i}"><input type="text" name="option[${i}]" placeholder="option" required><span class="options" id="o${i}">X</span></div> <div id="option${k}"></div>`;
 	let did = document.getElementById(`o${i}`);
 	did.addEventListener('click', () => {
 		did.parentElement.outerHTML = '';
