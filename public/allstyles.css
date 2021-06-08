@@ -28,6 +28,12 @@ a{
 	min-width: 80px;
 	padding: 5px;
 }
+#ano{
+	color: white;
+	background-color: #343A40;
+	border-radius: 10px;
+	padding: 5px;
+}
 form {
 	display: flex;
 	flex-direction: column;
