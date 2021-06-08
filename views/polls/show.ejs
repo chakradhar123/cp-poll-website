@@ -1,9 +1,9 @@
 <% include ../partials/header %>
 <div class="dps1">
 	<% if(poll.votedUsers.includes(currentUser._id)){ %>
-	<div><%= poll.question %></div>
+	<h1><%= poll.question %></h1>
 	<% poll.options.forEach((option,index)=>{ %>
-	<div>
+	<div class="options">
 		<%= option.text %>-<%= option.votes %> <% if(option.votes===1){ %> vote <%
 		}else{ %> votes <% } %>
 	</div>
