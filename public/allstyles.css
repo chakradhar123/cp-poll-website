@@ -75,7 +75,7 @@ input{
 	text-align: center;
 }
 .cen input {
-	width: 19rem;
+	width: 17rem;
 }
 .cen span {
 	width: 2rem;
@@ -134,6 +134,6 @@ html,body{
 	min-height: 100%;
 	min-width: 100%;
 }
-.cen > input{
+/* .cen > input{
 	width: 95%;
-}
+} */
