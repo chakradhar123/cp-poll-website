@@ -12,6 +12,11 @@ form {
 	flex-direction: column;
 	justify-content: center;
 }
+button{
+	background-color: #343A40;
+	border-radius: 10px;
+	color: white;
+}
 .in,
 .lrb {
 	width: 20rem;
