@@ -81,3 +81,8 @@ form {
 .prp {
 	margin: 0 auto;
 }
+body {
+	background: url('https://fivethirtyeight.com/wp-content/uploads/2019/01/POLLS-HOUSEKEEPING-4x3.png?w=575');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
