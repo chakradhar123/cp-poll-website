@@ -33,6 +33,7 @@ a{
 	background-color: #343A40;
 	border-radius: 10px;
 	padding: 5px;
+	width: 120px;
 }
 form {
 	display: flex;
