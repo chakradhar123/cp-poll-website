@@ -1,0 +1,12 @@
+<% include ../partials/header %>
+
+<h1 id="phi">Public Polls</h1>
+<div class="pdis">
+<% polls.forEach(poll=>{ %>
+    <div class="iq pollin" >  <a  href="/polls/<%= poll._id %>"><%= poll.question %></a>  </div> 
+<% }) %>
+</div>
+
+
+
+<% include ../partials/footer %>

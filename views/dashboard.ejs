@@ -1,0 +1,8 @@
+<% include ./partials/header %>
+<h1>Profile</h1>
+<div>Name:<%= user.firstName %> <%= user.lastName %></div>
+<div>email:<%= user.email %></div>
+<div>Polls:</div>
+<% Polls.forEach(poll=>{ %>
+<div><a href="/polls/<%= poll._id %>"><%= poll.question %></a></div>
+<% })%> <% include ./partials/footer %>

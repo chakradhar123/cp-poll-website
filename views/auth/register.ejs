@@ -1,0 +1,19 @@
+<% include ../partials/header %>
+
+<h1>Register</h1>
+<form class="logform" action="/register" method="POST">
+    <label class="flabel" for="username">Username</label>
+    <input class="in" id="username" name="username"  type="text" placeholder="username">
+    <label class="flabel" for="firstname">Firstname</label>
+    <input class="in"  id="firstname" name="firstName"  type="text" placeholder="firstname">
+    <label class="flabel" for="lastname">Lastname</label>
+    <input class="in" id="lastname" name="lastName"  type="text" placeholder="lastname">
+    <label class="flabel" for="email">Email</label>
+    <input class="in" id="email" name="email" placeholder="email" type="email">
+    <label class="flabel" for="password">Password</label>
+    <input class="in" id="password" name="password" placeholder="password" type="password">
+    <button class="lrb">Register</button>
+</form>
+
+
+<% include ../partials/footer %>

@@ -1,0 +1,41 @@
+<% include ../partials/header %>
+<div class="dps1">
+	<% if(poll.votedUsers.includes(currentUser._id)){ %>
+	<div><%= poll.question %></div>
+	<% poll.options.forEach((option,index)=>{ %>
+	<div>
+		<%= option.text %>-<%= option.votes %> <% if(option.votes===1){ %> vote <%
+		}else{ %> votes <% } %>
+	</div>
+	<% }) %>
+	<div>You aldrady voted</div>
+	<% }else{ %>
+</div>
+<form class="dps2" action="/polls/<%= poll._id %>" method="POST">
+	<div><%= poll.question %></div>
+	<% poll.options.forEach((option,index)=>{ %>
+	<div class="soption">
+		<label class="slabel" for="option<%= index %>"><%= option.text %></label>
+		<input
+			class="soption"
+			id="option<%= index %>"
+			value="<%= option._id %>"
+			name="onlyone"
+			type="radio"
+			required
+		/>
+	</div>
+	<% }) %>
+
+	<button class="lrb">Submit</button>
+	<% } %>
+</form>
+<% if(poll.author.id.equals(currentUser._id)){ %>
+<form
+	class="delete-form"
+	action="/polls/<%= poll._id %>?_method=DELETE"
+	method="POST"
+>
+	<button class="delete-btn">DELETE</button>
+</form>
+<% } %> <% include ../partials/footer %>

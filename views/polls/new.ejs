@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+<h1>Create New Poll</h1>
+<form id="newform" action="/polls" method="POST">
+	<label class="nlabel" for="question">Question</label>
+	<input
+		class="in"
+		id="question"
+		name="question"
+		placeholder="ex:which is the best?"
+		type="text"
+		required
+	/>
+	<div class="options">
+		<div class="cen" id="os1">
+			<input type="text" name="option[1]" placeholder="option" required /><span
+				id="o1"
+				>X</span
+			>
+		</div>
+		<div id="option1"></div>
+		<div class="cen" id="os2">
+			<input type="text" name="option[2]" placeholder="option" required /><span
+				id="o2"
+				>X</span
+			>
+		</div>
+		<div id="option2"></div>
+	</div>
+	<div id="ano">Add an option</div>
+	<div class="prp">
+		<label for="public">Public poll</label>
+		<input id="public" type="radio" name="p" value="true" required />
+	</div>
+	<div class="prp">
+		<label for="private">Private poll</label>
+		<input id="private" type="radio" name="p" value="false" />
+	</div>
+
+	<button class="lrb">Submit</button>
+</form>
+<script src="/inputlogic.js"></script>
+<% include ../partials/footer %>
