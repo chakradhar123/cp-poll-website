@@ -12,7 +12,7 @@
 	<% }else{ %>
 </div>
 <form class="dps2" action="/polls/<%= poll._id %>" method="POST">
-	<div><%= poll.question %></div>
+	<h1><%= poll.question %></h1>
 	<% poll.options.forEach((option,index)=>{ %>
 	<div class="soption">
 		<label class="slabel" for="option<%= index %>"><%= option.text %></label>

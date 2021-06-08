@@ -12,10 +12,14 @@ body {
 	flex-direction: column;
 }
 h1 {
-	color: black;
+	color: #343A40;
 	text-align: center;
 	margin-top: 15rem;
 	font-size: 3rem;
+}
+button{
+	background-attachment: #343A40;
+	color: white;
 }
 div {
 	margin: 0 auto;
