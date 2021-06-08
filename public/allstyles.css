@@ -4,6 +4,15 @@ h1 {
 	font-weight: bold;
 	color: #343A40;
 }
+.dashboard{
+	margin:20px auto;
+	background-color: #343A40;
+	color: white;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 a{
 	color: white;
 }
