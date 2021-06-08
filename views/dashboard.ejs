@@ -1,10 +1,10 @@
 <% include ./partials/header %>
 <h1>Profile</h1>
 <div class="dashboard">
-<div>Name:<%= user.firstName %> <%= user.lastName %></div>
-<div>email:<%= user.email %></div>
-<div>Polls:</div>
+<div class="dashboardItem">Name:<%= user.firstName %> <%= user.lastName %></div>
+<div class="dashboardItem">email:<%= user.email %></div>
+<div class="dashboardItem">Polls:</div>
 </div>
 <% Polls.forEach(poll=>{ %>
-<div><a href="/polls/<%= poll._id %>"><%= poll.question %></a></div>
+<div class="dashboardItem"><a href="/polls/<%= poll._id %>"><%= poll.question %></a></div>
 <% })%> <% include ./partials/footer %>
