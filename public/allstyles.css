@@ -72,6 +72,7 @@ input{
 .alert{
 	margin-top: 50px;
 	z-index: 100;
+	position: fixed;
 }
 #ano {
 	align-self: center;
