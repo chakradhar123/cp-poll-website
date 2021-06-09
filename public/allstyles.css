@@ -70,6 +70,7 @@ input{
 	margin-top: 1rem;
 }
 .alert{
+	margin-top: 300px;
 	z-index: 100;
 }
 #ano {
