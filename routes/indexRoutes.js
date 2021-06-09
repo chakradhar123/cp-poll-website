@@ -37,10 +37,12 @@ router.get('/login', (req, res) => {
 router.post(
 	'/login',
 	passport.authenticate('local', {
-		successReturnToOrRedirect: '/polls',
 		failureRedirect: '/login'
 	}),
-	(req, res) => {}
+	(req, res) => {
+		req.flash('success', 'Welcome back!');
+			res.redirect('/polls');
+	}
 );
 
 router.get('/logout', (req, res) => {

@@ -41,6 +41,7 @@ router.post('/', middleware.isLoggedIn, (req, res) => {
 						console.log(err);
 					});
 			});
+			req.flash('success', 'Poll Created Successfully!!');
 			res.redirect('/users/' + req.user._id);
 		})
 		.catch(err => {
@@ -78,6 +79,7 @@ router.post('/:id', middleware.isLoggedIn, (req, res) => {
 router.delete('/:id', middleware.checkPollOwnership, (req, res) => {
 	Poll.findOneAndDelete({ _id: req.params.id })
 		.then(f => {
+			req.flash('success', 'Poll Deleted Successfully!');
 			return res.redirect('/users/' + req.user._id);
 		})
 		.catch(err => {
