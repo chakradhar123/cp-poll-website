@@ -1,7 +1,7 @@
 html {
 	height: 100%;
 	margin: 0;
-	padding-bottom: 30rem;
+	
 }
 body {
 	height: 100%;
@@ -10,7 +10,7 @@ body {
 .main {
 	display: flex;
 	flex-direction: column;
-	
+	padding-bottom: 30rem;
 }
 h1 {
 	color: white;
