@@ -91,6 +91,7 @@ input{
 }
 .cen span {
 	width: 2rem;
+	background-color: #343A40;
 	padding:5px 10px;
 	cursor: pointer;
 }
