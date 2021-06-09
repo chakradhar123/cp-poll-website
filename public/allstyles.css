@@ -73,8 +73,11 @@ input{
 	
 
 	margin-top: 65px;
-	margin-bottom: -60px;
+	
 
+}
+.alert{
+	margin-bottom: -65px;
 }
 #ano {
 	align-self: center;
