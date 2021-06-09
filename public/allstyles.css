@@ -92,6 +92,7 @@ input{
 .cen span {
 	width: 2rem;
 	padding:5px 10px;
+	cursor: pointer;
 }
 .cen {
 	margin-top: 1rem;
