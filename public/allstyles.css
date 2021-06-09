@@ -69,9 +69,12 @@ input{
 .lrb {
 	margin-top: 1rem;
 }
-.alert{
-	margin-top: 50px;
+.alll{
+	
 	z-index: 100;
+	margin: 50px auto;
+	align-self: center;
+	text-align: center;
 	position: fixed;
 }
 #ano {
