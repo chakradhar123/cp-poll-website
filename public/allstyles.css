@@ -76,6 +76,8 @@ input{
 	align-self: center;
 	text-align: center;
 	position: fixed;
+	left: 50%;
+  transform: translate(-50%, -50%);
 }
 #ano {
 	align-self: center;
