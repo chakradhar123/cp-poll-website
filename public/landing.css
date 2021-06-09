@@ -10,7 +10,7 @@ body {
 .main {
 	display: flex;
 	flex-direction: column;
-	background-color: #343A40;
+	
 }
 h1 {
 	color: white;
@@ -18,7 +18,7 @@ h1 {
 	text-align: center;
 	margin-top: 17rem;
 	font-size: 3rem;
-	background-color: #343A40;
+	
 	
 	padding: 5px;
 }
@@ -31,6 +31,8 @@ div {
 	margin: 0 auto;
 }
 body {
+	background-color:rgba(52, 58, 64, 0.5);
+
 	background: url('https://fivethirtyeight.com/wp-content/uploads/2019/01/POLLS-HOUSEKEEPING-4x3.png?w=575');
 	background-size: cover;
 	background-repeat: no-repeat;
