@@ -6,7 +6,7 @@ h1 {
 }
 .dashboard{
 	margin:20px auto;
-	background-color: #343A40;
+	background-color:rgba(52, 58, 64, 0.7);
 	color: white;
 	padding: 20px;
 	display: flex;
@@ -22,7 +22,7 @@ a{
 }
 .slabel,.options{
 	color: white;
-	background-color: #343A40;
+	background-color:rgba(52, 58, 64, 0.7);
 	border-radius: 10px;
 	margin:10px;
 	min-width: 80px;
@@ -104,10 +104,10 @@ input{
 	text-align: center;
 	text-decoration: none;
 	font-size: 2rem;
-	border: 1px solid #343A40;
+	
 	border-radius: 25px;
 	padding: 0.5rem;
-	background-color: #343A40;
+	background-color:rgba(52, 58, 64, 0.7);
 	color: white;
 	margin-left: auto;
 	margin-right: auto;
