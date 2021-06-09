@@ -72,6 +72,7 @@ router.post('/:id', middleware.isLoggedIn, (req, res) => {
 				.catch(err => {
 					console.log(err);
 				});
+				req.flash('success', 'Voted Successfully!!');
 			res.redirect('/polls/' + req.params.id);
 		})
 		.catch(err => console.log(err));
