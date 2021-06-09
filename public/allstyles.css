@@ -32,6 +32,7 @@ a{
 	color: white;
 	background-color: #343A40;
 	border-radius: 10px;
+	cursor: pointer;
 	padding: 5px;
 	width: 120px;
 }
